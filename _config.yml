@@ -27,6 +27,7 @@ github_username:  tranlyvu
 #destination: _site
 
 # Build settings
+name: vietbarista
 markdown: kramdown
 theme: jekyll-theme-architect
 gems:
