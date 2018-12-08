@@ -1,62 +1,52 @@
-# [Start Bootstrap - Modern Business](https://startbootstrap.com/template-overviews/modern-business/)
+# **Big Data Processing**
 
-[Modern Business](http://startbootstrap.com/template-overviews/modern-business/) is a multipurpose, full website template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template includes 17 unique HTML pages and a working PHP contact form.
+The prject aims to store and process large airline transportation dataset to answer different types of queries. we will process in batch processing modes (using Hadoop/Cassandra, and separately using Spark) and stream processing mode (using Storm).
 
-## Preview
+The project was based on University of Illinois at Urbana-Champaign' [Cloud Computing Specialization](https://www.coursera.org/specializations/cloud-computing) Capstone Project.
 
-[![Modern Business Preview](https://startbootstrap.com/assets/img/templates/modern-business.jpg)](https://blackrockdigital.github.io/startbootstrap-modern-business/)
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-modern-business/)**
+---
+Project Specification
+---
 
-## Status
+The project will use a [transportation dataset](https://aws.amazon.com/datasets/transportation-databases/) from the US Bureau of Transportation Statistics (BTS) that is hosted as an Amazon EBS volume snapshot.
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-modern-business/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-modern-business.svg)](https://www.npmjs.com/package/startbootstrap-modern-business)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-modern-business.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-modern-business)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-modern-business/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-modern-business)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-modern-business/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-modern-business?type=dev)
+The dataset used in the Project contains data and statistics from the US Department of Transportation on aviation, maritime, highway, transit, rail, pipeline, bike/pedestrian, and other modes of transportation in CSV format. The data is described in more detail by the [Bureau of Transportation Statistics](https://www.transtats.bts.gov/DataIndex.asp). (Note that the dataset we are using does not extend beyond 2008, although more recent data is available from the previous link.) In this Project, we will concentrate exclusively on the aviation portion of the dataset, which contains flight data such as departure and arrival delays, flight times, etc. For an example of analysis using this dataset, see Which flight will get you there fastest?
 
-## Download and Installation
+We will process database with both batch processing systems (Apache Hadoop and Spark), and in a stream processing system (Apache Storm). 
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/modern-business/)
-* Install via npm: `npm i startbootstrap-modern-business`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-modern-business.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-modern-business)
+The set of questions that must be answered using this dataset is provided in the next section. These questions involve discovering useful information such as the best day of week to fly to minimize delays, the most popular airports, the most on-time airlines, etc. Each task will require you to answer a subset of these questions using a particular set of distributed systems. The exact methodology used to answer the questions is largely left to you, but you must integrate and utilize the specified systems to arrive at your answers.
 
-## Usage
+Questions
 
-### Basic Usage
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+---
+Contribution
+---
 
-### Advanced Usage
+Contributions are welcome! For bug reports or requests please submit an [issue](https://github.com/tranlyvu/big-data-processing/issues).
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+For new feature contribution, please follow the following instruction:
 
-## Bugs and Issues
+```
+1. Fork the repo (https://github.com/tranlyvu/big-data-processing.git)
+2. Create your feature branch (`git checkout -b new/your-feature`)
+3. Commit your changes (`git commit -am 'Add some new feature'`)
+4. Push to the branch (`git push origin new/your-feature`)
+5. Create a new Pull Request at https://github.com/tranlyvu/big-data-processing/pulls
+```
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-modern-business/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/modern-business/).
+---
+Contact
+---
 
-## Custom Builds
+Feel free to contact me to discuss any issues, questions, or comments.
+*  Email: vutransingapore@gmail.com
+*  Linkedln: [@vutransingapore](https://www.linkedin.com/in/tranlyvu/)
+*  GitHub: [Tran Ly Vu](https://github.com/tranlyvu)
 
-You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
+---
+License
+---
 
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-modern-business/blob/gh-pages/LICENSE) license.
+See the [LICENSE](https://github.com/tranlyvu/big-data-processing/blob/master/LICENSE) file for license rights and limitations (Apache License 2.0).
